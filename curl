@@ -1,0 +1,11 @@
+curl -X POST https://frmuat.unitybank.co.in/api/v1/ifrm/useraccessmanagement/login/user/fnr \
+  -H "Content-Type: application/json" \
+  -d '{"userName": "fnr", "password": "fnr@123"}' \
+  --cacert /home/dev/Kubernetes_and_service_mesh/PWC_scripts/public_key/certificate.crt
+
+
+
+
+
+curl --cacert /home/dev/Kubernetes_and_service_mesh/PWC_scripts/public_key/certificate.crt -X POST -H "Content-Type: application/json" -b "authToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmbnIiLCJyb2xlcyI6WyJmcm06Zm5yIl0sImlzcyI6Imh0dHBzOlwvXC9wYWM0ai5vcmciLCJwYXJ0bmVySWQiOiIxIiwiZXhwIjoxNzA4MDcxMzE4LCJ1c2VySWQiOiIxIiwiaWF0IjoxNzA4MDY5NTE4LCJqdGkiOiI4YWYyZTYwMS1iZWE2LTQ4NTMtYmMyZS03MzU1ZDI2ZjJhNDcifQ.6PSsVC5tBARNtQccoFiMcAY2AWKDZNqeD1iPaDEJUOk" -d @payload.json https://frmuat.unitybank.co.in/api/v1/ifrm/frm/ruleengine/json/score
+
